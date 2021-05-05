@@ -13,7 +13,7 @@ boston = datasets.load_boston()
 # making  train_test here :
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size = 0.2, random_state = 2)
-# ML in two lines
+# 40 ML Algos in two lines
 reg = LazyRegressor(verbose=0, ignore_warnings=False, custom_metric=None)
 models, predictions = reg.fit(X_train, X_test, y_train, y_test)
 
